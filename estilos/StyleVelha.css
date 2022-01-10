@@ -1,0 +1,57 @@
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: beige;
+    border: 1px solid gray;
+    display: inline-block;
+    
+}
+
+body{
+    text-align: center;
+}
+
+.o{
+    position: relative;/*2= pra resolver isso, é so mudar o padrão, daí a imagem colocada abaixo vai levar em consideração o pai que é a div "square" e não mais o body*/
+}
+
+.o:after{
+    content: "\🛡️";
+    font-size: 50px;
+    line-height: 100px;
+    position: absolute;/*1= ao usar absolute, ele vai levar em consideração o elemento pai que é diferente do padrão*/
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    
+}
+
+.x{
+    position: relative;/*2= pra resolver isso, é so mudar o padrão, daí a imagem colocada abaixo vai levar em consideração o pai que é a div "square" e não mais o body*/
+}
+
+.x:after{
+    content: "\⚔️️";
+    font-size: 50px;
+    line-height: 100px;
+    position: absolute;/*1= ao usar absolute, ele vai levar em consideração o elemento pai que é diferente do padrão*/
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    
+}
+
+button{
+    height: 100px;
+    width: 150px;
+    background-color: cadetblue;
+    margin-top: 150px;
+    
+}
